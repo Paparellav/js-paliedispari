@@ -4,11 +4,11 @@
 
 const userWord = prompt('Inserisci una parola');
 console.log(userWord);
+
 let myWord = checkPalindrom(userWord);
-console.log(myWord);
 let result;
 
-if (userWord === myWord) {
+if (myWord === userWord) {
     result = ('La parola è palindroma');
 } else {
     result = ('La parola non è palindroma');
@@ -23,5 +23,5 @@ console.log(result);
  */
 
 function checkPalindrom(userElement) {
-    return userElement === userElement.split('').reverse().join(''); 
+    return userElement.split('').reverse().join('');
 }
