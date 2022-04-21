@@ -13,8 +13,7 @@ console.log("Numero utente", userNumber);
 const computerNumber = generateRndInteger(1,5);
 console.log("Numero computer", computerNumber);
 
-let sum = 0;
-sum = userNumber + computerNumber;
+let sum = userNumber + computerNumber;
 let evenOrOdd = pariOrDispari(sum)
 console.log("La somma dei numeri è:", sum);
 console.log("Il risultato finale è:", evenOrOdd);
@@ -25,10 +24,6 @@ if (userChoice === evenOrOdd) {
     console.log("Hai perso cojone");
 }
 
-
-
-
-
 // FUNCTIONS
 function generateRndInteger(min, max) {
     const randNumber = Math.floor(Math.random() * (max - min + 1) ) + min;
@@ -38,9 +33,9 @@ function generateRndInteger(min, max) {
 function pariOrDispari(mySum) {
     let result;
     if (mySum % 2 === 0) {
-        result = 'Pari';
+        result = 'pari';
     } else {
-        result = 'Dispari';
+        result = 'dispari';
     }
 
     return result;
